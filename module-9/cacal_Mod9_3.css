@@ -1,0 +1,49 @@
+html {
+  font-size: 16px;
+}
+	
+body {
+  font-size: 16px;
+}
+
+h1 {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+address {
+  text-align: center;
+}
+
+a:link {
+  font-size: 1.25em;
+  color: #4F3674;
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 1.25em;
+  color: #D6A800;
+  text-decoration: underline;
+}
+
+a:visited {
+  font-size: 1.25em;
+  color: #4F3674;
+}
+
+span.sentence {
+  font-style: italic;
+}
+
+p.intro {
+  text-indent: 2em;
+}
