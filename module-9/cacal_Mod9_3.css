@@ -1,9 +1,5 @@
-html {
-  font-size: 16px;
-}
-	
 body {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 h1 {
@@ -14,7 +10,7 @@ h1 {
 
 p {
   font-family: verdana;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.4em;
 }
