@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Development with HTML and CSS</title>
+<meta name="name,date,assignment"
+	content="
+	Scott Cacal
+	9.28.24
+	Module 10.3
+	" >
+<meta name="assignment"
+	content="
+	Assignment 10.3: JavaScript - Part 2
+	" >
+<meta name="description"
+	content="this is an intro to JavaScript - Part 2" >
+<meta name="git"
+	content="https://github.com/scottcacal/csd-340" >
+	
+    <script>
+	
+	var onImg= "judge1.jpg";
+	var offImg= "judge2.jpg";
+  
+	function contempt() {
+		document.getElementById("words").innerHTML = "I'm holding you in contempt!";
+	}
+	
+    </script>
+
+
+</head>
+
+<body>
+<div id = "container">
+
+<h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+    <br />
+    <div>
+		<a href=#>
+			<img src="judge1.jpg" onclick="this.src = this.src == offImg ? onImg : offImg;"/>	
+		</a>
+    </div>
+    <br />
+    <div
+        onmouseover="this.style.color='red';"
+        onmouseout= "this.style.color='black';">
+
+		Are you mocking me with that outfit?!
+		<br />
+		<br />
+
+    </div>
+	<br />
+    <div>
+		<a href=#
+        onmouseover="vinny.src='vinny1.jpg';"
+        onmouseout= "vinny.src='vinny2.jpg';"
+		>
+        <img border = 0 name = "vinny" src = "vinny2.jpg">
+		</a>
+    </div>
+    <br />
+    <div
+        onmouseover="this.innerHTML='for you.',this.style.color='black', this.style.backgroundColor='yellow';"	
+        onmouseout= "this.innerHTML='I wore this ridiculous thing...', this.style.color='black', this.style.backgroundColor='white';">
+
+		I wore this ridiculous thing...
+		<br />
+		<br />
+
+    </div>
+	<br />
+	<div
+        onmouseover="this.style.color='white', this.style.backgroundColor='red';"
+        onmouseout= "this.style.color='black', this.style.backgroundColor='white';">
+
+		Click the Judge's Image
+		<br />
+
+    </div>
+	<br />
+</body>
+
+</html>
