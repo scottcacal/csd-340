@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+	<link href="cacal_Mod12_2.css" type="text/css" rel="stylesheet" >
+<meta name="name,date,assignment"
+	content="
+	Scott Cacal
+	10.12.24
+	Module 12.2
+	" >
+<meta name="assignment"
+	content="
+	Assignment 12.2: JavaScript - Part 4
+	" >
+<meta name="description"
+	content="Javascript Array Manipulation and Events and Placement of Buttons" >
+<meta name="git"
+	content="https://github.com/scottcacal/csd-340" >
+
+</head>
+
+<body>
+
+
+<div id = "container">
+
+<h1>Assignment 12.2: JavaScript - Part 4</h1>
+
+<div id = "leftdiv">
+
+
+<h3>Top 10 Favorite Books</h3>
+
+<script>
+	const books = ["Ready Player One", "The Martian", "Angels & Demons", 
+	"Life of Pi", "Fight Club", "A Heart That Works", "The Body Keeps the Score", 
+	"Harry Potter and the Goblet of Fire", "Harry Potter and the Order of the Phoenix", 
+	"Harry Potter and the Prisoner of Azkaban"];
+	
+	const booksRev = books.toReversed();
+	
+	document.getElementById("list").innerHTML = books;
+		
+	function removePreviousDisplay() {
+		document.getElementById("list").innerHTML = "";
+	}
+	
+	function topToBottom() {
+		for (let i = 0; i < books.length; i++) {
+			document.getElementById("list").innerHTML += ((i+1) + ". " + books[i] + " <br /> ");
+		}
+	
+	}
+	
+	function bottomToTop() {
+		for (let i = 0; i < booksRev.length; i++) {
+			document.getElementById("list").innerHTML += ((booksRev.length - i) + ". " + booksRev[i] + " <br /> ");
+		}
+	
+	}		
+</script>
+
+	<p> 
+		<button type="button"
+		onclick="removePreviousDisplay(), topToBottom()">Top to Bottom</button>
+		<button type="button"
+		onclick="removePreviousDisplay(), bottomToTop()">Bottom to Top</button> 			
+	</p>
+	<hr>
+	<p id="list"></p>
+  
+</div>
+
+<div id = "rightdiv">
+
+<h3>5 Things I've Learned Since the Course Started</h3>
+<ul>
+  <li>Design methods leveraging how the mind works</li>
+  <li>Creating a style Sheet</li>
+  <li>Linking style sheet to html</li>
+  <li>Stylizing links</li>
+  <li>Creating a landing page for a repository</li>
+</ul>
+
+</div>
+
+<div id = "last">
+</div>
+
+<div id = "goback">
+
+<a href= "../index.html">back to Landing Page</a>
+
+</div>
+
+</div>
+</body>
+
+</html>
